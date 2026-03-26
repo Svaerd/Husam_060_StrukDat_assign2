@@ -5,6 +5,11 @@ public class TodoListManager {
   Scanner sc = new Scanner(System.in);
   int count = 0;
 
+  // add new task
+  void add(Task t) {
+    task_list.add(t);
+    System.out.println("added: " + t.title);
+  }
   void start() { // main loop
     System.out.println("=== TODO ===");
     while (true) {
@@ -34,5 +39,13 @@ public class TodoListManager {
         System.out.println("try 1-6");
       }
     }
+  }
+
+  void addTask() {
+    System.out.print("task name: ");
+    String name = sc.nextLine();
+    System.out.print("due date: ");
+    LocalDate date = LocalDate.parse(sc.nextLine());
+    add(new Task(name, date));
   }
 }
