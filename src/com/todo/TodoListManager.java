@@ -10,6 +10,17 @@ public class TodoListManager {
     task_list.add(t);
     System.out.println("added: " + t.title);
   }
+  void done(int id) {
+    for (Task t : task_list) {
+      if (t.id == id) {
+        t.completed = true;
+        System.out.println("marked: " + t.title);
+        return;
+      }
+    }
+    System.out.println("id not found");
+  }
+
   void start() { // main loop
     System.out.println("=== TODO ===");
     while (true) {
