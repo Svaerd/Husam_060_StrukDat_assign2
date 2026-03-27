@@ -35,6 +35,11 @@ public class TodoListManager {
     System.out.println("id not found");
   }
 
+  void del(int id) {
+    task_list.removeIf(t -> t.id == id);
+    System.out.println("deleted");
+  }
+
   void start() { // main loop
     System.out.println("=== TODO ===");
     while (true) {
