@@ -116,8 +116,8 @@ public class Main {
 }
 ```
 
-## Screenshot Output
-![Pasted image 20260327074746](/Attachments/Pasted%image%20260327074746.png)
+## Screenshot Output]
+<img width="540" height="820" alt="image" src="https://github.com/user-attachments/assets/131770af-81ef-41bc-bc9c-3806c36ede75" />
 
 ## Prinsip-Prinsip OOP yang Diterapkan
 
