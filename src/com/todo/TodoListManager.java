@@ -10,6 +10,20 @@ public class TodoListManager {
     task_list.add(t);
     System.out.println("added: " + t.title);
   }
+
+  void listAll() { // show all tasks
+    if (task_list.isEmpty()) {
+      System.out.println("nothing here yet");
+      return;
+    }
+    System.out.println("\nAll Tasks:");
+    for (int i = 0; i < task_list.size(); i++) {
+      Task t = task_list.get(i);
+      String mark = t.completed ? "x" : " ";
+      System.out.println("[" + mark + "] " + t.id + ". " + t.title + " | " + t.due);
+    }
+  }
+
   void done(int id) {
     for (Task t : task_list) {
       if (t.id == id) {
