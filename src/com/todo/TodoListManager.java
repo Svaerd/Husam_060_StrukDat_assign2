@@ -40,6 +40,19 @@ public class TodoListManager {
     System.out.println("deleted");
   }
 
+  void showPending() { // pending tasks
+    int pending_count = 0;
+    System.out.println("\nPending:");
+    for (Task t : task_list) {
+      if (t.completed == false) {
+        System.out.println("- " + t.title);
+        pending_count++;
+      }
+    }
+    if (pending_count == 0)
+      System.out.println("none!");
+  }
+
   void start() { // main loop
     System.out.println("=== TODO ===");
     while (true) {
