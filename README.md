@@ -93,16 +93,6 @@ public class Task {
 }
 ```
 
-### TodoListManager.java (main logic)
-
- lihat file: `src/com/todo/TodoListManager.java`
-
-fitur:
-- add task baru dengan title dan due date
-- list semua task dengan status done/belum
-- mark task sebagai done
-- delete task
-- filter hanya yang pending
 
 ### Main.java
 ```java
@@ -219,6 +209,13 @@ public class TodoListManager {
 }
 
 ```
+
+fitur:
+- add task baru dengan title dan due date
+- list semua task dengan status done/belum
+- mark task sebagai done
+- delete task
+- filter hanya yang pending
 
 ## Screenshot Output]
 <img width="540" height="820" alt="image" src="https://github.com/user-attachments/assets/131770af-81ef-41bc-bc9c-3806c36ede75" />
